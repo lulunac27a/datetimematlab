@@ -1,0 +1,33 @@
+Year=input('Year: ')% Enter year
+yeardate=datetime(Year,1,1)
+for i=0:182
+    yeardate=yeardate+caldays(1)
+    disp('Start '+string(yeardate,"uuuu-MM-dd"))
+    disp('Era: '+string(yeardate,"G")+' ('+string(yeardate,"GGGG")+')')
+    disp('Year: '+string(yeardate,"y"))
+    disp('ISO Year: '+string(yeardate,"u"))
+    disp('Quarter: '+string(yeardate,"Q")+' ('+string(yeardate,"QQQQ")+')')
+    disp('Month: '+string(yeardate,"M")+' - '+string(yeardate,"MMM")+' ('+string(yeardate,"MMMM")+')')
+    disp('Week of Month: '+string(yeardate,"W"))
+    disp('Day of month: '+string(yeardate,"d"))
+    disp('Day of Year: '+string(yeardate,"D"))
+    disp('Day of Week: '+string(yeardate,"e")+' ('+string(yeardate,"eeee")+')')
+    disp('Weekday: '+string(yeardate,"e")+' - '+string(yeardate,"eee")+' ('+string(yeardate,"eeee")+')')
+    disp('End '+string(yeardate,"uuuu-MM-dd"))
+end
+input('More?')% Avoid the command window not showing the first ~80 days (command window only shows up to 5000 lines)
+for i=0:182
+    yeardate=yeardate+caldays(1)
+    disp('Start '+string(yeardate,"uuuu-MM-dd"))
+    disp('Era: '+string(yeardate,"G")+' ('+string(yeardate,"GGGG")+')')
+    disp('Year: '+string(yeardate,"y"))
+    disp('ISO Year: '+string(yeardate,"u"))
+    disp('Quarter: '+string(yeardate,"Q")+' ('+string(yeardate,"QQQQ")+')')
+    disp('Month: '+string(yeardate,"M")+' - '+string(yeardate,"MMM")+' ('+string(yeardate,"MMMM")+')')
+    disp('Week of Month: '+string(yeardate,"W"))
+    disp('Day of month: '+string(yeardate,"d"))
+    disp('Day of Year: '+string(yeardate,"D"))
+    disp('Day of Week: '+string(yeardate,"e")+' ('+string(yeardate,"eeee")+')')
+    disp('Weekday: '+string(yeardate,"e")+' - '+string(yeardate,"eee")+' ('+string(yeardate,"eeee")+')')
+    disp('End '+string(yeardate,"uuuu-MM-dd"))
+end
